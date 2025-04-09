@@ -11,9 +11,32 @@ public class HlavniProgram {
 
     public void start() {
         zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(400);
+        zofka.turnRight(90);
         zofka.penDown();
 
-        nakresliPrasatko();
+        //  nakresliPrasatko();
+
+
+        nakresliOktagon();
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(150);
+        zofka.turnLeft(90);
+        zofka.penDown();
+
+        nakresliKolecko();
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(200);
+        zofka.turnLeft(90);
+        zofka.penDown();
+
+        nakresliSlunicko();
 
     }
 
@@ -33,9 +56,9 @@ public class HlavniProgram {
         noha();
 
         ocas();
-
     }
 
+    // casti prasatka - ukol1
     public void telo() {
         for (int i = 0; i < 2; i++) {
             zofka.move(100);
@@ -66,7 +89,34 @@ public class HlavniProgram {
         zofka.turnRight(45);
         zofka.move(30);
     }
+//cast 2 ukolu - oktagon, kolecko, slunicko
+    public void nakresliSlunicko() {
+        for(int i =0; i<9;i++) {
+            zofka.move(20);
+            zofka.turnLeft(90);
+            zofka.move(30);
+            zofka.turnRight(180);
+            zofka.move(30);
+            zofka.turnLeft(70);
+            zofka.move(20);
+            zofka.turnRight(20);
+        }
+
+
+    }
+
+    public void nakresliKolecko () {
+        for (int i = 0; i < 18; i++) {
+            zofka.move(20);
+            zofka.turnRight(20);
+        }
+    }
+    public void nakresliOktagon () {
+        for (int i = 0; i < 8; i++) {
+            zofka.move(50);
+            zofka.turnRight(45);
+        }
+    }
+
+
 }
-
-
-
