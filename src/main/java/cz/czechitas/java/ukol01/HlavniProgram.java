@@ -18,9 +18,11 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.penDown();
 
+        //  ukol cast 1
         //  nakresliPrasatko();
 
 
+        // ukol cast 2
         //  nakresliOktagon();
 
 
