@@ -19,7 +19,7 @@ public class HlavniProgram {
         zofka.penDown();
 
         //  ukol cast 1
-        //  nakresliPrasatko();
+        // nakresliPrasatko();
 
 
         // ukol cast 2
